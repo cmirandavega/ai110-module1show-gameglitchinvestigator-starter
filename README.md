@@ -51,7 +51,8 @@ This is a number guessing game where the player tries to guess a randomly genera
 9. **Win score formula** — changed  to  to correctly calculate points.
 
 ## 📸 Demo
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ] ![Winning game screenshot]([Screenshot 2026-03-15 123928.png](https://github.com/cmirandavega/ai110-module1show-gameglitchinvestigator-starter/blob/main/Screenshot%202026-03-15%20123928.png))
+
 
 ## 🚀 Stretch Features
 
