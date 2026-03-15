@@ -6,7 +6,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+  (for example: "the hints were backwards").
   1. The hints are backwards, its saying to guess higher when you should be guessing lower and lower when you should be guessing higher
   2. The difficulty should be changing the range and its not showing in the app. When I select the Easy difficulty it should be numbers up to 20, but it will still allow me to guess above that, as I am testing currently on easy difficulty it shows secret is 50 which is above the limit
   3. the attempt limits seem to be off by 1, the code said Easy has a attempt limit of 6 but shows 5 in the browser
@@ -32,12 +32,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 4. What did you learn about Streamlit and state?
 
-- In your own words, explain why the secret number kept changing in the original app.
   One reason was that streamlit tends lit would rerun the app after every action was made, essentially it would keep rerunning changing its parameters.
   Another reason was the hardcoded random secret number, if you were to run an easy mode for example, the secret number would still be above what the secret number should be.
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
   Imagine Streamlit like a whiteboard that gets erased and redrawn every time someone touches it
-- What change did you make that finally gave the game a stable secret number?
   The key fix was adding this block before the existing if "secret" not in st.session_state. It tracks the current difficulty in session state and compares it on every rerun.
 ---
 
